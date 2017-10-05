@@ -8,3 +8,4 @@ so far, I finish problems, starting from easy problems. <br>
 I will keep updating.. stay tune.......<br>
 If you have any question, please send email to
 <a href='mailto: johnnyhsu1106@gmail.com'>johnnyhsu1106@gmail.com</a>
+# Leetcode-solution-in-JavaScript
