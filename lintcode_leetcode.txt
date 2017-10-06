@@ -1,11 +1,18 @@
 lintcode \ leetcode
 2 - Binary Search
-459. Closest Number in Sorted Array Easy
-458. Last Position of Target Easy
-28. Search a 2D Matrix Easy \ 74. Search a 2D Matrix
-585. Maximum Number in Mountain Sequence Medium
-447. Search in a Big Sorted Array Medium
-159. Find Minimum in Rotated Sorted Array Medium
-75. Find Peak Element Medium
-74. First Bad Version Medium
-62. Search in Rotated Sorted Array
+    459. Closest Number in Sorted Array Easy
+    458. Last Position of Target Easy
+    28. Search a 2D Matrix Easy \ 74. Search a 2D Matrix
+    585. Maximum Number in Mountain Sequence Medium
+    447. Search in a Big Sorted Array Medium
+    159. Find Minimum in Rotated Sorted Array Medium
+    75. Find Peak Element Medium
+    74. First Bad Version Medium
+    62. Search in Rotated Sorted Array
+    462. Total Occurrence of Target Easy
+    254. Drop Eggs Easy
+    14. First Position of Target Easy
+    460. K Closest Numbers In Sorted Array Medium
+    414. Divide Two Integers Medium
+    61. Search for a Range Medium
+    38. Search a 2D Matrix II
