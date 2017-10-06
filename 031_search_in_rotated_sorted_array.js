@@ -1,3 +1,4 @@
+'use strict';
 const search = (nums, target) => {
 
     if (nums === undefined || nums.length == 0 || target === undefined) {
@@ -11,7 +12,7 @@ const search = (nums, target) => {
 
         if (nums[mid] === target) {
             return mid;
-        }
+
         if (nums[start] <= nums[mid]) {
             if (nums[start] <= target && target <= nums[mid]) {
                 end = mid
@@ -38,9 +39,9 @@ const search = (nums, target) => {
 
 
 
-const main = () => {
-    let nums = [4, 5, 6, 7, 0, 1, 2];
-    let target = 7;
-    console.log(search(nums, target));
-}
-main();
+// const main = () => {
+//     let nums = [4, 5, 6, 7, 0, 1, 2];
+//     let target = 7;
+//     console.log(search(nums, target));
+// }
+// main();
