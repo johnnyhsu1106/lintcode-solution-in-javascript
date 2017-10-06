@@ -9,12 +9,10 @@ const findMin = (nums) => {
 
     while (start + 1 < end) {
         let mid = Math.floor(start + (end - start) /2);
-        if (nums[mid] < target) {
+        if (nums[mid] <= target) {
             end = mid;
-        } else if (nums[mid] > target) {
-            start = mid;
         } else {
-            end = mid;
+            start = mid;
         }
     }
     return Math.min(nums[start], nums[end]);
