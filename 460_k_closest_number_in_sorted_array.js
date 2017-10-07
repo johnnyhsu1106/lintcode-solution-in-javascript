@@ -44,23 +44,23 @@ const findClosestElementIndex = (nums, target) => {
 };
 
 
-const main = () => {
-    let nums, target, k;
-    nums = [1, 2, 3];
-    target = 2;
-    k = 3;
-    console.log(findClosestElements(nums, target, k));
-    // [2, 1, 3]
-    nums = [1, 4, 6, 8];
-    target = 3;
-    k = 3;
-    console.log(findClosestElements(nums, target, k));
-    // [4, 1, 6]
-    nums = [1, 4, 6, 10, 20];
-    target = 1;
-    k = 4;
-    console.log(findClosestElements(nums, target, k));
-    // [1, 4, 6, 10]
-
-};
-main();
+// const main = () => {
+//     let nums, target, k;
+//     nums = [1, 2, 3];
+//     target = 2;
+//     k = 3;
+//     console.log(findClosestElements(nums, target, k));
+//     // [2, 1, 3]
+//     nums = [1, 4, 6, 8];
+//     target = 3;
+//     k = 3;
+//     console.log(findClosestElements(nums, target, k));
+//     // [4, 1, 6]
+//     nums = [1, 4, 6, 10, 20];
+//     target = 1;
+//     k = 4;
+//     console.log(findClosestElements(nums, target, k));
+//     // [1, 4, 6, 10]
+//
+// };
+// main();

@@ -1,29 +1,44 @@
 lintcode \ leetcode
 
 2 - Binary Search
-Required
-    459. Closest Number in Sorted Array
-    458. Last Position of Target
-    28. Search a 2D Matrix  / 74. Search a 2D Matrix
-    585. Maximum Number in Mountain Sequence
-    447. Search in a Big Sorted Array
-    159. Find Minimum in Rotated Sorted Array / 153. Find Minimum in Rotated Sorted Array
-    75. Find Peak Element  / 162. Find Peak Element
-    74. First Bad Version  / 278. First Bad Version
-    62. Search in Rotated Sorted Array
-Optional
-    462. Total Occurrence of Target
-254. Drop Eggs
-    14. First Position of Target
-    460. K Closest Numbers In Sorted Array
-414. Divide Two Integers
-    61. Search for a Range / 34. Search for a Range
-    38. Search a 2D Matrix II / 240. Search a 2D Matrix II (change count to return true/false)
-457. Classical Binary Search
-141. Sqrt(x)
-617. Maximum Average Subarray
-586. Sqrt(x) II
-160. Find Minimum in Rotated Sorted Array II
-63. Search in Rotated Sorted Array II
-437. Copy Books
-183. Wood Cut
+    Required
+        459. Closest Number in Sorted Array
+        458. Last Position of Target
+        028. Search a 2D Matrix  / 74. Search a 2D Matrix
+        585. Maximum Number in Mountain Sequence
+        447. Search in a Big Sorted Array
+        159. Find Minimum in Rotated Sorted Array / 153. Find Minimum in Rotated Sorted Array
+        075. Find Peak Element  / 162. Find Peak Element
+        074. First Bad Version  / 278. First Bad Version
+        062. Search in Rotated Sorted Array
+    Optional
+        462. Total Occurrence of Target
+    254. Drop Eggs
+        014. First Position of Target
+        460. K Closest Numbers In Sorted Array
+    414. Divide Two Integers
+        061. Search for a Range / 34. Search for a Range
+        038. Search a 2D Matrix II / 240. Search a 2D Matrix II (change count to return true/false)
+    457. Classical Binary Search
+    141. Sqrt(x)
+    617. Maximum Average Subarray
+    586. Sqrt(x) II
+    160. Find Minimum in Rotated Sorted Array II
+    063. Search in Rotated Sorted Array II
+    437. Copy Books
+    183. Wood Cut
+
+
+
+Binary Tree & Divide Conquer
+    Required
+        597. Subtree with Maximum Average
+        596. Minimum Subtree
+    480. Binary Tree Paths
+    453. Flatten Binary Tree to Linked List
+    97. Maximum Depth of Binary Tree
+    93. Balanced Binary Tree
+    67. Binary Tree Inorder Traversal
+    66. Binary Tree Preorder Traversal
+    578. Lowest Common Ancestor III
+    95. Validate Binary Search Tree

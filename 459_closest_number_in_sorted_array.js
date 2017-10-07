@@ -19,18 +19,18 @@ const closestNumber =  (nums, target) => {
 };
 
 
-const main = () => {
-    let nums;
-    nums = [1, 2, 3];
-    console.log(closestNumber(nums, 2) === 1);
-
-    nums = [1, 4, 6];
-    console.log(closestNumber(nums, 3) === 1);
-
-    nums = [1, 4, 6];
-    console.log(closestNumber(nums, 5) === 1 || closestNumber(nums, 5) === 2);
-
-    nums = [1, 3, 3, 4];
-    console.log(closestNumber(nums, 2) === 0 || closestNumber(nums, 2) === 1 || closestNumber(nums, 2) === 2);
-};
-main();
+// const main = () => {
+//     let nums;
+//     nums = [1, 2, 3];
+//     console.log(closestNumber(nums, 2) === 1);
+//
+//     nums = [1, 4, 6];
+//     console.log(closestNumber(nums, 3) === 1);
+//
+//     nums = [1, 4, 6];
+//     console.log(closestNumber(nums, 5) === 1 || closestNumber(nums, 5) === 2);
+//
+//     nums = [1, 3, 3, 4];
+//     console.log(closestNumber(nums, 2) === 0 || closestNumber(nums, 2) === 1 || closestNumber(nums, 2) === 2);
+// };
+// main();

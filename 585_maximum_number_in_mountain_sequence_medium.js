@@ -17,12 +17,12 @@ const mountainSequence = (nums) => {
 
 
 
-const main = () => {
-    let nums;
-    nums = [1, 2, 4, 8, 6, 3];
-    console.log(mountainSequence(nums) == 8);
-
-    nums = [10, 9, 8, 7];
-    console.log(mountainSequence(nums) == 10);
-};
-main();
+// const main = () => {
+//     let nums;
+//     nums = [1, 2, 4, 8, 6, 3];
+//     console.log(mountainSequence(nums) == 8);
+//
+//     nums = [10, 9, 8, 7];
+//     console.log(mountainSequence(nums) == 10);
+// };
+// main();

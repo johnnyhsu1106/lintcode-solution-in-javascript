@@ -6,13 +6,13 @@ const search = (nums, target) => {
     }
     let start = 0
     let end = nums.length - 1;
-
+    //
     while (start + 1 < end) {
         let mid = Math.floor(start + (end - start) / 2);
 
         if (nums[mid] === target) {
             return mid;
-
+        }
         if (nums[start] <= nums[mid]) {
             if (nums[start] <= target && target <= nums[mid]) {
                 end = mid
@@ -43,5 +43,5 @@ const search = (nums, target) => {
 //     let nums = [4, 5, 6, 7, 0, 1, 2];
 //     let target = 7;
 //     console.log(search(nums, target));
-// }
+// };
 // main();
