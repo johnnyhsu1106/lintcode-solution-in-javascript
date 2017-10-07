@@ -10,15 +10,15 @@ class TreeNode {
 
 
 class ResultType {
-    constructor(isBalanced, height) {
-        this.isBalanced = isBalanced;
+    constructor(balanced, height) {
+        this.balanced = balanced;
         this.height = height;
     }
 };
 
 const isBalanced = (root) => {
     let result = helper(root);
-    return result.isBalanced;
+    return result.balanced;
 };
 
 const helper = (node) => {
@@ -27,16 +27,14 @@ const helper = (node) => {
     }
     let left = helper(node.left);
     let right = helper(node.right);
-    console.log(left, right);
-    if (!left.isBalanced || !right.isBalanced) {
+
+    if (!left.balanced || !right.balanced) {
         return new ResultType(false, 0);
     }
-    if (Math.abs(left.height - right.height) > 1) {
-        return new ResultType(false, 0);
-    }
+    let balanced = Math.abs(left.height - right.height) <= 1;
+    let height = Math.max(left.height, right.height) + 1 ;
 
-    return new ResultType(true, Math.max(left.height, right.height) + 1);
-
+    return new ResultType(balanced, height );
 };
 
 
