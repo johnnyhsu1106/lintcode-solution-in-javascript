@@ -13,15 +13,16 @@ const binaryTreePaths = (root) => {
     // use Array.prototype.map() and Array.prototype.concat()
     if (root === null) {
         return [];
-    } else if (root.left === null && root.right === null) {
+    }
+    if (root.left === null && root.right === null) {
         return [root.val.toString()];
     }
 
-    let left_paths = binaryTreePaths(root.left);
-    let right_paths = binaryTreePaths(root.right);
+    let leftPaths = binaryTreePaths(root.left);
+    let rightPaths = binaryTreePaths(root.right);
     //  Array.map((num) => {return num....})  Thiw will return new Array;
-    let left = left_paths.map((path) =>{ return root.val.toString() + '->' + path });
-    let right = right_paths.map((path) => { return root.val.toString() + '->' + path });
+    let left = leftPaths.map((path) =>{ return root.val.toString() + '->' + path });
+    let right = rightPaths.map((path) => { return root.val.toString() + '->' + path });
 
     return left.concat(right);
 
@@ -31,22 +32,23 @@ const binaryTreePaths = (root) => {
 const binaryTreePaths_2 = (root) => {
     // use divide and conquer
     // use normal loop in JS.
-
-    if (root === null) {
-        return [];
-    } else if (root.left === null && root.right === null) {
-        return [String(root.val)];
-    }
-    let left_paths = binaryTreePaths(root.left);
-    let right_paths = binaryTreePaths(root.right);
-
     let paths = [];
-
-    for (let i = 0; i < left_paths.length; i++) {
-        paths.push(root.val.toString() + '->' + left_paths[i]);
+    if (root === null) {
+        return paths;
     }
-    for (let i = 0; i < right_paths.length; i++) {
-        paths.push(root.val.toString() + '->' + right_paths[i]);
+    if (root.left === null && root.right === null) {
+        return paths.push(root.val.toString());
+    }
+
+    let leftPaths = binaryTreePaths(root.left);
+    let rightPaths = binaryTreePaths(root.right);
+
+
+    for (let i = 0; i < leftPaths.length; i++) {
+        paths.push(root.val.toString() + '->' + leftPaths[i]);
+    }
+    for (let i = 0; i < rightPaths.length; i++) {
+        paths.push(root.val.toString() + '->' + rightPaths[i]);
     }
     return paths;
 };

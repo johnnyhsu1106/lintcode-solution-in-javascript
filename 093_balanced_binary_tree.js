@@ -1,12 +1,12 @@
-'use strict';
+// 'use strict';
 
-// class TreeNode {
-//     constructor (value) {
-//         this.val = value;
-//         this.left = null;
-//         this.right = null;
-//     }
-// }
+class TreeNode {
+    constructor (value) {
+        this.val = value;
+        this.left = null;
+        this.right = null;
+    }
+}
 
 
 class ResultType {
@@ -16,8 +16,8 @@ class ResultType {
     }
 };
 
-const isBalanced = (node) => {
-    let result = helper(node);
+const isBalanced = (root) => {
+    let result = helper(root);
     return result.isBalanced;
 };
 
@@ -25,9 +25,9 @@ const helper = (node) => {
     if (node === null) {
         return new ResultType(true, 0);
     }
-    left = helper(node.left);
-    right = helper(node.right);
-
+    let left = helper(node.left);
+    let right = helper(node.right);
+    console.log(left, right);
     if (!left.isBalanced || !right.isBalanced) {
         return new ResultType(false, 0);
     }
@@ -38,6 +38,7 @@ const helper = (node) => {
     return new ResultType(true, Math.max(left.height, right.height) + 1);
 
 };
+
 
 // const main = () => {
 //     let node;

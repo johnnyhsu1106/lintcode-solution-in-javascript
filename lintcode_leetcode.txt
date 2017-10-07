@@ -19,7 +19,7 @@ lintcode \ leetcode
     414. Divide Two Integers
         061. Search for a Range / 34. Search for a Range
         038. Search a 2D Matrix II / 240. Search a 2D Matrix II (change count to return true/false)
-    457. Classical Binary Search
+        457. Classical Binary Search
     141. Sqrt(x)
     617. Maximum Average Subarray
     586. Sqrt(x) II
@@ -37,11 +37,11 @@ Binary Tree & Divide Conquer
         480. Binary Tree Paths / 257. Binary Tree Paths
         453. Flatten Binary Tree to Linked List / 114. Flatten Binary Tree to Linked List
         97. Maximum Depth of Binary Tree / 104. Maximum Depth of Binary Tree
-    93. Balanced Binary Tree / 110. Balanced Binary Tree
+        93. Balanced Binary Tree / 110. Balanced Binary Tree
         67. Binary Tree Inorder Traversal / 94. Binary Tree Inorder Traversal
         66. Binary Tree Preorder Traversal / 144. Binary Tree Preorder Traversal
     578. Lowest Common Ancestor III
-    95. Validate Binary Search Tree
+        95. Validate Binary Search Tree / 98. Validate Binary Search Tree
 
     Optional
     595. Binary Tree Longest Consecutive Sequence

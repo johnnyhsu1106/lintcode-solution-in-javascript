@@ -1,36 +1,36 @@
 'use strict';
 
-// class TreeNode {
-//     constructor(val) {
-//         this.val = val;
-//         this.left = null;
-//         this.right = null;
-//     }
-// }
-// global variable;
+class TreeNode {
+    constructor(val) {
+        this.val = val;
+        this.left = null;
+        this.right = null;
+    }
+}
 
-let subtreeNode;
-let min = Infinity;
+
+let subtree;
+let subtreeSum = Infinity;
 
 const findSubtree = (root) => {
     if (root === null) {
         return;
     }
-    findSubtreeHelper(root);
-    return subtreeNode;
+    let result = findSubtreeHelper(root);
+    return result.subtree;
 };
 
 const findSubtreeHelper = (node) => {
     if (node === null) {
-        return 0;
+        return new Result(null, null);
     }
     let left = findSubtreeHelper(node.left);
     let right = findSubtreeHelper(node.right);
 
-    total = left + node.val + right;
-    if (total <= min) {
-        min = total;
-        subtreeNode = node;
+    total = left.sum + node.val + right.sum;
+    if (total <= subtreeSum) {
+        subtreeSum = total;
+        subtree = node;
     }
     return total;
 };
