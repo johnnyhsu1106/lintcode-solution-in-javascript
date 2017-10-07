@@ -12,11 +12,12 @@ const inorderTraversal = (root) => {
     if (root === null) {
         return [];
     }
-    let result;
+    let result =[];
     let left = inorderTraversal(root.left);
     let right = inorderTraversal(root.right);
-    left.push(root.val);
-    result = left.concat(right);
+    result = result.concat(left);
+    result.push(root.val);
+    result = result.concat(right);
     return result;
 };
 

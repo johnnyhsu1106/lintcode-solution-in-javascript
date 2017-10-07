@@ -7,8 +7,6 @@ const preorderTraversal = (root) => {
     result.push(root.val);
     let left = preorderTraversal(root.left);
     let right = preorderTraversal(root.right);
-    result = result.concat(left);
-    result = result.concat(right);
-
+    result = result.concat(left, right);
     return result;
 };

@@ -8,7 +8,7 @@
 //     }
 // }
 
-const binaryTreePaths = (root) => {
+const binaryTreePaths_1 = (root) => {
     // use divide and conquer
     // use Array.prototype.map() and Array.prototype.concat()
     if (root === null) {
@@ -54,6 +54,41 @@ const binaryTreePaths_2 = (root) => {
 };
 
 
+
+const binaryTreePaths_3 = (root) => {
+    // use dfs traverse
+    if (root === null) {
+        return [];
+    }
+    let result = [];
+    let path = [];
+    path.push(root.val.toString());
+
+    dfs(root, path, result);
+    return result;
+}
+
+const dfs = (root, path, result) => {
+    if (root.left === null & root.right === null) {
+        result.push(path.join(''));
+    }
+
+    if (root.left !== null) {
+        path.push('->');
+        path.push(root.left.val.toString());
+        dfs(root.left, path, result);
+        path.pop();
+        path.pop();
+    }
+    if (root.right !== null) {
+        path.push('->');
+        path.push(root.right.val.toString());
+        dfs(root.right, path, result);
+        path.pop();
+        path.pop();
+    }
+
+};
 
 // const main = () => {
 //     let root;

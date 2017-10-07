@@ -8,7 +8,6 @@ class TreeNode {
     }
 }
 
-
 class ResultType {
     constructor(balanced, height) {
         this.balanced = balanced;
