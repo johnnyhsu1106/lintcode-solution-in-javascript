@@ -34,7 +34,7 @@ Binary Tree & Divide Conquer
     Required
         597. Subtree with Maximum Average
         596. Minimum Subtree
-    480. Binary Tree Paths
+    480. Binary Tree Paths / 257. Binary Tree Paths
     453. Flatten Binary Tree to Linked List
     97. Maximum Depth of Binary Tree
     93. Balanced Binary Tree

@@ -1,4 +1,3 @@
-'use strict';
 const totalOccurence = (nums, target) => {
     // 1. find the first position of target
     // 2. find the last position of target

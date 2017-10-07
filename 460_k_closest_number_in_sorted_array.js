@@ -1,4 +1,3 @@
-'use strict';
 const findClosestElements = (nums, target, k) => {
     let result = [];
     if (nums === null || nums.length === 0 || k <= 0) {

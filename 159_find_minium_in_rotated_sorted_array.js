@@ -1,4 +1,3 @@
-'use strict';
 const findMin = (nums) => {
     if (nums.length === 1) {
         return nums[0];

@@ -1,4 +1,3 @@
-'use strict';
 const searchMatrix = (matrix, target) => {
     if (matrix === null || matrix.length === 0 || matrix[0].length === 0) {
         return 0

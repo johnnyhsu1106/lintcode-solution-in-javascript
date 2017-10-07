@@ -1,4 +1,3 @@
-'use strict';
 const searchRange = (nums, target) => {
     if (nums === null || nums.length === 0) {
         return [-1, -1];

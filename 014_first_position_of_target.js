@@ -1,4 +1,3 @@
-'use strict';
 const binarySearch = (nums, target) => {
     let start = 0, end = nums.length - 1;
     while (start + 1 < end) {

@@ -1,4 +1,3 @@
-'use strict';
 const lastPostion = (nums, target) => {
 
     let start = 0, end = nums.length - 1;
