@@ -1,3 +1,5 @@
+'use strict';
+
 const search = (nums, target) => {
 
     if (nums === undefined || nums.length == 0 || target === undefined) {

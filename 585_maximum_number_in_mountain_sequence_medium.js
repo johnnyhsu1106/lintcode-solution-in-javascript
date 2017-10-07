@@ -1,3 +1,5 @@
+'use strict';
+
 const mountainSequence = (nums) => {
     let start = 0, end = nums.length - 1;
 

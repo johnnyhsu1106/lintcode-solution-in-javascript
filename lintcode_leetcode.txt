@@ -34,11 +34,28 @@ Binary Tree & Divide Conquer
     Required
         597. Subtree with Maximum Average
         596. Minimum Subtree
-    480. Binary Tree Paths / 257. Binary Tree Paths
-    453. Flatten Binary Tree to Linked List
-    97. Maximum Depth of Binary Tree
-    93. Balanced Binary Tree
-    67. Binary Tree Inorder Traversal
-    66. Binary Tree Preorder Traversal
+        480. Binary Tree Paths / 257. Binary Tree Paths
+        453. Flatten Binary Tree to Linked List / 114. Flatten Binary Tree to Linked List
+        97. Maximum Depth of Binary Tree / 104. Maximum Depth of Binary Tree
+    93. Balanced Binary Tree / 110. Balanced Binary Tree
+        67. Binary Tree Inorder Traversal / 94. Binary Tree Inorder Traversal
+        66. Binary Tree Preorder Traversal / 144. Binary Tree Preorder Traversal
     578. Lowest Common Ancestor III
     95. Validate Binary Search Tree
+
+    Optional
+    595. Binary Tree Longest Consecutive Sequence
+    376. Binary Tree Path Sum
+    474. Lowest Common Ancestor II
+    246. Binary Tree Path Sum II
+    68. Binary Tree Postorder Traversal
+    619. Binary Tree Longest Consecutive Sequence III
+    614. Binary Tree Longest Consecutive Sequence II
+    4475. Binary Tree Maximum Path Sum II
+    448. Inorder Successor in Binary Search Tree
+    378. Convert Binary Search Tree to Doubly Linked List
+    472. Binary Tree Path Sum III
+
+    Related
+    155. Minimum Depth of Binary Tree
+        88. Lowest Common Ancestor / 236. Lowest Common Ancestor of a Binary Tree

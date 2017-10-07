@@ -1,10 +1,12 @@
-class TreeNode {
-    constructor(val) {
-        this.val = val;
-        this.left = null;
-        this.right = null;
-    }
-}
+'use strict';
+
+// class TreeNode {
+//     constructor(val) {
+//         this.val = val;
+//         this.left = null;
+//         this.right = null;
+//     }
+// }
 
 const binaryTreePaths = (root) => {
     // use divide and conquer

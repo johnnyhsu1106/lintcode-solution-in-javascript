@@ -1,20 +1,15 @@
 'use strict';
 // scopeTest( );
 
-const a = { a: 1,
-            hello() {
-                let self = this;
-                console.log(self);
-                function world() {
-                    console.log(self);
-                }
-                world();
-            }
+class TreeNode {
+    constructor(val) {
+        this.val = val;
+        this.left = null;
+        this.right = null;
+    }
+}
 
+let root = new TreeNode(1);
+let p = root;
 
-        };
-
-
-a.hello();
-// b();
-// // call the function defined above
+console.log(root == p);

@@ -1,3 +1,5 @@
+'use strict';
+
 const findPeak = (nums) => {
     if (nums === null) {
         return;

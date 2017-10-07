@@ -1,3 +1,5 @@
+'use strict';
+
 const searchBigSortedArray = (reader, target) => {
     let k = 1;
     while (reader.get(k) <= target) {

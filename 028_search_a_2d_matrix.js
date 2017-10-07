@@ -1,3 +1,5 @@
+'use strict';
+
 const searchMatrix = (matrix, target) => {
     // edge case
     if (matrix === null || matrix.length === 0 || matrix[0].length ===0) {
