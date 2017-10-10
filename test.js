@@ -1,17 +1,8 @@
-// 'use strict';
-// scopeTest( );
+'use strict';
+console.log(global);
 
-// class TreeNode {
-//     constructor(val) {
-//         this.val = val;
-//         this.left = null;
-//         this.right = null;
-//     }
-// }
-
- const test = () => {
-    hello = 1;
-    console.log(hello);
+ const main = () => {
+     console.log(this);
  };
-test();
+main();
 // console.log(hello);
