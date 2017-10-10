@@ -1,3 +1,4 @@
+'use strict';
 const levelOrder = (root) => {
     let result = [];
     if (root === null) {
@@ -16,9 +17,8 @@ const levelOrder = (root) => {
                 queue.push(node.left);
             }
             if (node.right !== null) {
-                queue.push(node.right);    
+                queue.push(node.right);
             }
-
         }
         result.push(nodes);
     }

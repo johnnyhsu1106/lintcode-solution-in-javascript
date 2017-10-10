@@ -53,18 +53,18 @@ lintcode \ leetcode
     378. Convert Binary Search Tree to Doubly Linked List
     472. Binary Tree Path Sum III
 
-155. Minimum Depth of Binary Tree
+    155. Minimum Depth of Binary Tree
     88. Lowest Common Ancestor / 236. Lowest Common Ancestor of a Binary Tree
 
 4 - Breadth First Search
         433. Number of Islands / 200. Number of Islands
-    69. Binary Tree Level Order Traversal
-    616. Course Schedule II
-    618. Search Graph Nodes
+        69. Binary Tree Level Order Traversal /102. Binary Tree Level Order Traversal
+        616. Course Schedule II / 210. Course Schedule II
+        618. Search Graph Nodes
     611. Knight Shortest Path
     598. Zombie in Matrix
-    178. Graph Valid Tree
-    137. Clone Graph
+        178. Graph Valid Tree / 261 Graph Valid Tree
+        137. Clone Graph / 133 Clone Graph
     7. Binary Tree Serialization
     573. Build Post Office II
 
