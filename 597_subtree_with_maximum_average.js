@@ -1,12 +1,12 @@
 'use strict';
 
-// class TreeNode {
-//     constructor(val) {
-//         this.val = val;
-//         this.left = null;
-//         this.right = null;
-//     }
-// }
+class TreeNode {
+    constructor(val) {
+        this.val = val;
+        this.left = null;
+        this.right = null;
+    }
+}
 
 class Result {
     constructor(sum, size) {
@@ -35,8 +35,7 @@ const findSubtreeHelper = (node) => {
 
     let sum = left.sum + node.val + right.sum ;
     let size = left.size + 1 + right.size;
-    console.log(sum);
-    console.log(size);
+
     let avg = sum / size;
     if (avg >= maxAvg) {
         maxAvg = avg;

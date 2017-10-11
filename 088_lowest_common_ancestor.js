@@ -7,7 +7,10 @@ class TreeNode {
         this.right = null;
     }
 }
-
+// if p, q exist below root, return lca(p, q)
+// if p exists only, return p
+// if q exists only, return q
+//  if p and q both don't exist, return null
 
 const lowestCommonAncestor = (root, p, q) => {
     if (root === null) {
@@ -21,9 +24,9 @@ const lowestCommonAncestor = (root, p, q) => {
 
     if (left !== null && right !== null) {
         return root;
-    } else if (left !== null) {
+    } else if (left !== null && right === null) {
         return left;
-    } else if (right !== null) {
+    } else if (left === null && right !== null) {
         return right;
     }
     return null ;
@@ -38,15 +41,13 @@ const lowestCommonAncestor = (root, p, q) => {
 //     root.right.left = new TreeNode(5);
 //     root.right.right = new TreeNode(6);
 //
-//     // p = root.left;
-//     // q = root.right.left;
-//     // console.log(lowestCommonAncestor(root, p, q));
+//     p = root.left;
+//     q = root.right.left;
+//     console.log(lowestCommonAncestor(root, p, q));
 //
 //     p = root.right.left;
 //     q = root.right.right;
 //     console.log(lowestCommonAncestor(root, p, q));
-//
-//
 //
 // };
 // main();

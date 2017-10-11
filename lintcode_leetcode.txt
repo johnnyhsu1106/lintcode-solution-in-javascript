@@ -50,7 +50,7 @@ lintcode \ leetcode
     614. Binary Tree Longest Consecutive Sequence II
     4475. Binary Tree Maximum Path Sum II
     448. Inorder Successor in Binary Search Tree
-    378. Convert Binary Search Tree to Doubly Linked List
+        378. Convert Binary Search Tree to Doubly Linked List
     472. Binary Tree Path Sum III
 
     155. Minimum Depth of Binary Tree
@@ -73,7 +73,7 @@ lintcode \ leetcode
     605. Sequence Reconstruction
         531. Six Degrees
     127. Topological Sorting
-    120. Word Ladder
+        120. Word Ladder / 127. Word Ladder
 
 5 - Depth First Search
     136. Palindrome Partitioning

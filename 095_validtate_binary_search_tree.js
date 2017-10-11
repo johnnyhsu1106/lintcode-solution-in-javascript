@@ -9,7 +9,8 @@ class TreeNode {
 }
 
 
-const isValidBST = (root) => {
+const isValidBST_1 = (root) => {
+    //  divide and conquer
     let max = Infinity;
     let min = -Infinity;
     return helper(root, min, max);
@@ -25,6 +26,7 @@ const helper = (root, min, max) => {
     }
     return helper(root.left, min, root.val) && helper(root.right, root.val, max);;
 };
+
 
 
 // const main = () => {
