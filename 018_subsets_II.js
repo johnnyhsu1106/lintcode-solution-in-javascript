@@ -1,6 +1,6 @@
 'use strict';
 
-const subsetWithDup = (nums) => {
+const subsetsWithDup = (nums) => {
     if (nums === null || nums.length === 0) {
         return [];
     }

@@ -59,14 +59,14 @@ const getNextWords = (word, wordSet) => {
 };
 
 const replaceChar = (index, word, newChar) => {
-    return word.slice(0, index) + newChar + word.slice(index + 1);
+    return word.substring(0, index).concat(newChar).concat(word.substring(index + 1));
 
 };
 
-// const main = () => {
-//     let beginWord = 'hit';
-//     let endWord = 'cog';
-//     let wordSet = new Set(["hot","dot","dog","lot","log"]);
-//     console.log(ladderLength(beginWord, endWord, wordSet));
-// };
-// main();
+const main = () => {
+    let beginWord = 'hit';
+    let endWord = 'cog';
+    let wordSet = new Set(["hot","dot","dog","lot","log"]);
+    console.log(ladderLength(beginWord, endWord, wordSet));
+};
+main();

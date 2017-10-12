@@ -82,14 +82,14 @@ lintcode \ leetcode
         120. Word Ladder / 127. Word Ladder
 
 5 - Depth First Search
-    136. Palindrome Partitioning
-    153. Combination Sum II
-    135. Combination Sum / 39. Combination Sum
-    18. Subsets II
-    16. Permutations II
-    15. Permutations
-    121. Word Ladder II
-    120. Word Ladder
+    136. Palindrome Partitioning / 131. Palindrome Partitioning
+        153. Combination Sum II / 40. Combination Sum II
+        135. Combination Sum / 39. Combination Sum
+        18. Subsets II / 90 Subsets II
+        16. Permutations II / 47. Permutations II
+        15. Permutations / 46 Permutations
+        121. Word Ladder II / 126. Word Ladder II
+        120. Word Ladder / 127. Word Ladder
     52. Next Permutation
     51. Previous Permutation
     582. Word Break II
@@ -115,8 +115,8 @@ lintcode \ leetcode
 
 7 - Two Pointers
     607. Two Sum - Data structure design
-    521. Remove Duplicate Numbers in Array
-    608. Two Sum - Input array is sorted
+        521. Remove Duplicate Numbers in Array
+    608. Two Sum - Input array is sorted / 167. Two Sum II - Input array is sorted
     609. Two Sum - Less than or equal to target
     587. Two Sum - Unique pairs
     533. Two Sum - Closest to target
