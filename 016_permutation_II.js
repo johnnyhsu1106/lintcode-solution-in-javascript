@@ -36,10 +36,8 @@ const dfs = (nums, permutation, visited, result) =>  {
     }
 };
 
-
-
-const main = () => {
-    let nums = [3, 3, 0, 3];
-    console.log(permuteUnique(nums));
-};
-main();
+// const main = () => {
+//     let nums = [3, 3, 0, 3];
+//     console.log(permuteUnique(nums));
+// };
+// main();

@@ -36,4 +36,4 @@ const deduplication2 = (nums) => {
 //     console.log(deduplication1(nums));
 //
 // };
-main();
+// main();

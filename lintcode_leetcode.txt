@@ -1,11 +1,11 @@
 lintcode \ leetcode
 1 - strStr & Coding Style
     13. strStr
-    18. Subsets II
+        18. Subsets II /90 Subsets II
         17. Subsets / 78. Subsets
     594. strStr II
-    16. Permutations II
-    15. Permutations
+        16. Permutations II / 47. Permutations II
+        15. Permutations / 46 Permutations
 2 - Binary Search
         459. Closest Number in Sorted Array
         458. Last Position of Target
@@ -15,7 +15,7 @@ lintcode \ leetcode
         159. Find Minimum in Rotated Sorted Array / 153. Find Minimum in Rotated Sorted Array
         075. Find Peak Element  / 162. Find Peak Element
         074. First Bad Version  / 278. First Bad Version
-        062. Search in Rotated Sorted Array
+        062. 8 Sorted Array
 
         462. Total Occurrence of Target
     254. Drop Eggs
@@ -24,6 +24,7 @@ lintcode \ leetcode
     414. Divide Two Integers
         061. Search for a Range / 34. Search for a Range
         038. Search a 2D Matrix II / 240. Search a 2D Matrix II (change count to return true/false)
+        600. Smallest Rectangle Enclosing Black Pixels
         457. Classical Binary Search
     141. Sqrt(x)
     617. Maximum Average Subarray
@@ -82,7 +83,7 @@ lintcode \ leetcode
         120. Word Ladder / 127. Word Ladder
 
 5 - Depth First Search
-    136. Palindrome Partitioning / 131. Palindrome Partitioning
+        136. Palindrome Partitioning / 131. Palindrome Partitioning
         153. Combination Sum II / 40. Combination Sum II
         135. Combination Sum / 39. Combination Sum
         18. Subsets II / 90 Subsets II
@@ -95,13 +96,13 @@ lintcode \ leetcode
     582. Word Break II
 
 6 - Linked List & Array
-    599. Insert into a Cyclic Sorted List
-    165. Merge Two Sorted Lists
+        599. Insert into a Cyclic Sorted List
+        165. Merge Two Sorted Lists / 21. Merge Two Sorted Lists
     138. Subarray Sum
     41. Maximum Subarray
     139. Subarray Sum Closest
     105. Copy List with Random Pointer
-    102. Linked List Cycle
+    102. Linked List Cycle / 141. Linked List Cycle
     98. Sort List
     450. Reverse Nodes in k-Group
     65. Median of two Sorted Arrays
@@ -116,19 +117,19 @@ lintcode \ leetcode
 7 - Two Pointers
     607. Two Sum - Data structure design
         521. Remove Duplicate Numbers in Array
-    608. Two Sum - Input array is sorted / 167. Two Sum II - Input array is sorted
-    609. Two Sum - Less than or equal to target
-    587. Two Sum - Unique pairs
-    533. Two Sum - Closest to target
-    148. Sort Colors
+        608. Two Sum - Input array is sorted / 167. Two Sum II - Input array is sorted
+        609. Two Sum - Less than or equal to target
+        587. Two Sum - Unique pairs
+        533. Two Sum - Closest to target
+        148. Sort Colors / 75. Sort Colors
     143. Sort Colors II
-    57. 3Sum
-    31. Partition Array
+        57. 3Sum
+            31. Partition Array
 
-    604. Window Sum subtreeSum
-    539. Move Zeroes subtreeSum
-    415. Valid Palindrome subtreeSum
-    56. Two Sum subtreeSum
+        604. Window Sum
+    539. Move Zeroes
+    415. Valid Palindrome
+    56. Two Sum
     625. Partition Array II
     610. Two Sum - Difference equals to target
     443. Two Sum - Greater than target
@@ -156,3 +157,51 @@ lintcode \ leetcode
     471. Top K Frequent Words
     130. Heapify
     124. Longest Consecutive Sequence
+
+
+
+1 - Follow up in Code Interview
+    401. Kth Smallest Number in Sorted Matrix
+    406. Minimum Size Subarray Sum
+    384. Longest Substring Without Repeating Characters
+    386. Longest Substring with At Most K Distinct Characters
+    465. Kth Smallest Sum In Two Sorted Arrays
+
+2 - Data Structure I
+    433. Number of Islands Easy
+    591. Connecting Graph III
+    590. Connecting Graph II
+    589. Connecting Graph
+    178. Graph Valid Tree
+    473. Add and Search Word
+    442. Implement Trie
+    432. Find the Weak Connected Component in the Directed Graph
+    431. Connected Component in Undirected Graph
+    123. Word Search
+    434. Number of Islands II
+    132. Word Search II
+
+3 - Data Structure II
+    575. Expression Expand
+    363. Trapping Rain Water
+    40. Implement Queue by Two Stacks
+    12. Min Stack
+    360. Sliding Window Median
+    364. Trapping Rain Water II
+    510. Maximal Rectangle
+    126. Max Tree
+    122. Largest Rectangle in Histogram
+    81. Data Stream Median
+    362. Sliding Window Maximum Super
+
+4 - Binary Search + Sweep Line
+    141. Sqrt(x) Easy
+    617. Maximum Average Subarray
+    586. Sqrt(x) II
+    391. Number of Airplanes in the Sky
+    414. Divide Two Integers
+    75. Find Peak Element
+    74. First Bad Version
+    437. Copy Books
+    390. Find Peak Element II
+    183. Wood Cut

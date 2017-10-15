@@ -63,10 +63,11 @@ const replaceChar = (index, word, newChar) => {
 
 };
 
-const main = () => {
-    let beginWord = 'hit';
-    let endWord = 'cog';
-    let wordSet = new Set(["hot","dot","dog","lot","log"]);
-    console.log(ladderLength(beginWord, endWord, wordSet));
-};
-main();
+
+// const main = () => {
+//     let beginWord = 'hit';
+//     let endWord = 'cog';
+//     let wordSet = new Set(["hot","dot","dog","lot","log"]);
+//     console.log(ladderLength(beginWord, endWord, wordSet));
+// };
+// main();
