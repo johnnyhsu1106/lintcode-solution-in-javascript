@@ -28,20 +28,20 @@ const partition = (head, x) => {
         }
         head = head.next;
     }
-    // rightTail.next = null;
+    rightTail.next = null; // remomve all nodes after rightTail
     leftTail.next = rightDummy.next;
 
     return leftDummy.next;
 };
 
 
-const main = () => {
-    let head, x;
-    head = new ListNode(1);
-    head.next = new ListNode(4);
-    head.next.next = new ListNode(3);
-    head.next.next.next = new ListNode(2);
-    x = 4;
-    console.log(partition(head, x));
-};
-main();
+// const main = () => {
+//     let head, x;
+//     head = new ListNode(1);
+//     head.next = new ListNode(4);
+//     head.next.next = new ListNode(3);
+//     head.next.next.next = new ListNode(2);
+//     x = 4;
+//     console.log(partition(head, x));
+// };
+// main();

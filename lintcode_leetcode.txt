@@ -111,15 +111,17 @@ lintcode \ leetcode
 
     548. Intersection of Two Arrays II l2
     547. Intersection of Two Arrays l2
-    96. Partition List
+        96. Partition List / 86. Partition List
     64. Merge Sorted Array l2
     6. Merge Two Sorted Arrays l2
-    103. Linked List Cycle II
+        103. Linked List Cycle II / 142. Linked List Cycle II
         35. Reverse Linked List / 206. Reverse Linked List
         36. Reverse Linked List II / 92. Reverse Linked List II
         511. Swap Two Nodes in Linked List /
-    167. Add Two Numbers / 2. Add Two Numbers
-    221. Add Two Numbers II
+        167. Add Two Numbers / 2. Add Two Numbers
+        221. Add Two Numbers II / 445. Add Two Numbers II
+        170. Rotate List / 61. Rotate List
+        90. Reorder List / 143. Reorder List
 
 
 7 - Two Pointers

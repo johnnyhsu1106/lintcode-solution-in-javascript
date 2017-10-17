@@ -39,7 +39,6 @@ const findKthNode = (dummy, k) => {
 }
 
 const reverse = (node) => {
-
     let prev = null;
     let curr = node;
 
