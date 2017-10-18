@@ -135,7 +135,7 @@ lintcode \ leetcode
 
 
 7 - Two Pointers
-    607. Two Sum - Data structure design
+        607. Two Sum - Data structure design / 170. Two Sum - Data structure design
         521. Remove Duplicate Numbers in Array
         608. Two Sum - Input array is sorted / 167. Two Sum II - Input array is sorted
         609. Two Sum - Less than or equal to target
@@ -143,25 +143,29 @@ lintcode \ leetcode
         533. Two Sum - Closest to target
         148. Sort Colors / 75. Sort Colors
     143. Sort Colors II
-        57. 3Sum
-            31. Partition Array
+        57. 3Sum / 15. 3Sum
+        31. Partition Array
 
         604. Window Sum
         539. Move Zeroes / 283. Move Zeroes
         415. Valid Palindrome / 125. Valid Palindrome
         56. Two Sum / 1. Two Sum
-    625. Partition Array II
-    610. Two Sum - Difference equals to target
-    443. Two Sum - Greater than target
+        625. Partition Array II
+        610. Two Sum - Difference equals to target
+        443. Two Sum - Greater than target
     461. Kth Smallest Numbers in Unsorted Array
-    382. Triangle Count
-    59. 3Sum Closest
-    58. 4Sum
+        382. Triangle Count
+        59. 3Sum Closest /  16. 3Sum Closest
+        58. 4Sum / a18. 4Sum
+        39. Recover Rotated Sorted Array / 189. Rotate Array
+        8. Rotate String
+
 
 
 8 - Data Structure
     128. Hash Function
     613. High Five
+    8. Rotate String
     612. K Closest Points
     606. Kth Largest Element II
     544. Top k Largest Numbers

@@ -1,8 +1,10 @@
 'use strict';
 
-
+const test = () => {
+    let nums = [1, 2, 3];
+    console.log('hello');
+};
  const main = () => {
-    //  console.log(this);
+     test();
  };
 main();
-// console.log(hello);

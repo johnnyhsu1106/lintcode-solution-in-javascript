@@ -22,7 +22,6 @@ const deduplication2 = (nums) => {
             nums[idx++] = nums[i];
         }
     }
-    console.log(nums);
     return idx;
 };
 
