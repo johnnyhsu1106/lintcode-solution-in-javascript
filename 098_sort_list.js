@@ -16,7 +16,7 @@ const sortList = (head) => {
 
     let middle = findMiddle(head);
     let right = sortList(middle.next);
-    middle.next = null;
+    middle.next = null;  // separate the left and right
     let left = sortList(head);
 
     return mergeList(left, right);

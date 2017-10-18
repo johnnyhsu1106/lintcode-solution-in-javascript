@@ -84,6 +84,15 @@ lintcode \ leetcode
         127. Topological Sorting
         120. Word Ladder / 127. Word Ladder
 
+
+    615. Course Schedule
+    431. Connected Component in Undirected Graph
+    71. Binary Tree Zigzag Level Order Traversal
+    70. Binary Tree Level Order Traversal II
+    600. Smallest Rectangle Enclosing Black Pixels
+    574. Build Post Office
+    434. Number of Islands II
+
 5 - Depth First Search
         136. Palindrome Partitioning / 131. Palindrome Partitioning
         153. Combination Sum II / 40. Combination Sum II
@@ -100,20 +109,20 @@ lintcode \ leetcode
 6 - Linked List & Array
         599. Insert into a Cyclic Sorted List
         165. Merge Two Sorted Lists / 21. Merge Two Sorted Lists
-    138. Subarray Sum
-    41. Maximum Subarray
+        138. Subarray Sum
+        41. Maximum Subarray / 53. Maximum Subarray
     139. Subarray Sum Closest
-    105. Copy List with Random Pointer
+        105. Copy List with Random Pointer / 138. Copy List with Random Pointer
         102. Linked List Cycle / 141. Linked List Cycle
-    98. Sort List /148. Sort List
-    450. Reverse Nodes in k-Group
-    65. Median of two Sorted Arrays
+        98. Sort List /148. Sort List
+        450. Reverse Nodes in k-Group / 25 Reverse Nodes in k-Group
+        65. Median of two Sorted Arrays /4. Median of Two Sorted Arrays
 
-    548. Intersection of Two Arrays II l2
-    547. Intersection of Two Arrays l2
+        548. Intersection of Two Arrays II / 350. Intersection of Two Arrays II
+        547. Intersection of Two Arrays / 349. Intersection of Two Arrays
         96. Partition List / 86. Partition List
-    64. Merge Sorted Array l2
-    6. Merge Two Sorted Arrays l2
+        64. Merge Sorted Array  / 88. Merge Sorted Array
+        6. Merge Two Sorted Arrays
         103. Linked List Cycle II / 142. Linked List Cycle II
         35. Reverse Linked List / 206. Reverse Linked List
         36. Reverse Linked List II / 92. Reverse Linked List II
@@ -122,6 +131,7 @@ lintcode \ leetcode
         221. Add Two Numbers II / 445. Add Two Numbers II
         170. Rotate List / 61. Rotate List
         90. Reorder List / 143. Reorder List
+        380. Intersection of Two Linked Lists / 160. Intersection of Two Linked Lists
 
 
 7 - Two Pointers
@@ -137,9 +147,9 @@ lintcode \ leetcode
             31. Partition Array
 
         604. Window Sum
-    539. Move Zeroes
-    415. Valid Palindrome
-    56. Two Sum
+        539. Move Zeroes / 283. Move Zeroes
+        415. Valid Palindrome / 125. Valid Palindrome
+        56. Two Sum / 1. Two Sum
     625. Partition Array II
     610. Two Sum - Difference equals to target
     443. Two Sum - Greater than target

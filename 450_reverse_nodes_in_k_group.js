@@ -32,9 +32,10 @@ const reverseNextKNodes = (head, k) => {
         return null;
     }
     let nkPlus1 = nk.next;
+
     nk.next = null; // disconnect nk and nkNext
-    //  reverse n1 -> .... -> nk
     nk = reverseList(n1);
+
     head.next = nk;
     n1.next = nkPlus1;
 

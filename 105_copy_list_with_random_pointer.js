@@ -33,7 +33,6 @@ const copyRandomList = (head) => {
             newNode.random = nodeMap.get(node.random);
         }
     });
-
     return nodeMap.get(head);
 };
 
