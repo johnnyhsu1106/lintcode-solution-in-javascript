@@ -23,7 +23,7 @@ const copyRandomList = (head) => {
         curr = curr.next;
     }
     // copy the next pointer
-    nodeMap.forEach((newNode, node) => {
+    for (let [node, newNode] of nodeMap) {
         // remember the check node.next is null or not.
         // Pass null to map.get(), it will return undefined
         if (node.next !== null) {
@@ -32,7 +32,7 @@ const copyRandomList = (head) => {
         if (node.random !== null) {
             newNode.random = nodeMap.get(node.random);
         }
-    });
+    }
     return nodeMap.get(head);
 };
 

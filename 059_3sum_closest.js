@@ -8,9 +8,10 @@ const threeSumClosest = (nums, target) => {
     let sum;
     let diff = Infinity;
     let closestSum;
-
-    for (let i = 0; i < nums.length - 2; i++) {
-        let start = i + 1 , end = nums.length - 1;
+    
+    let size = nums.length;
+    for (let i = 0; i < size - 2; i++) {
+        let start = i + 1 , end = size - 1;
 
         while (start < end) {
             sum = nums[i] + nums[start] + nums[end];

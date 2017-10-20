@@ -14,8 +14,8 @@ const subsetsWithDup = (nums) => {
 
 const dfs = (nums, startIdx, subset, results) => {
     results.push(subset.concat([]))
-
-    for (let i = startIdx; i < nums.length; i++) {
+    let size = nums.length;
+    for (let i = startIdx; i < size; i++) {
         if (i === 0 || nums[i] !== nums[i - 1] || i === startIdx) {
             subset.push(nums[i]);
             dfs(nums, i + 1, subset, results);

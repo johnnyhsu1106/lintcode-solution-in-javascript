@@ -15,8 +15,8 @@ const subsets = (nums) => {
 const dfs = (nums, start, subset, results) => {
     // exit of recursion
     results.push(subset.concat([]));
-    //
-    for (let i = start; i < nums.length; i++) {
+    let size = nums.length;
+    for (let i = start; i < size; i++) {
         subset.push(nums[i]);
         dfs(nums, i + 1, subset, results)
         subset.pop();

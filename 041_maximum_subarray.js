@@ -9,11 +9,12 @@ const maxSubArray = (nums) => {
     let sum = 0;
     let minPreSum = 0;
     let maxSum = -Infinity;
-    nums.forEach((num) => {
+    for (let num of nums) {
         sum += num;
         maxSum = Math.max(maxSum, sum - minPreSum)
         minPreSum = Math.min(sum, minPreSum);
-    });
+    }
+
     return maxSum;
 };
 

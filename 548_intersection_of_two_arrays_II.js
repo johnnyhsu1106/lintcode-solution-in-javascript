@@ -9,19 +9,18 @@ const intersection1 = (nums1, nums2) => {
     }
     let result = [];
     let uniqueCount = new Map();
-
-    nums1.forEach((num) => {
+    for (let num of nums1) {
         if (! uniqueCount.has(num)) {
             uniqueCount.set(num, 0);
         }
         uniqueCount.set(num, uniqueCount.get(num) + 1);
-    });
-    nums2.forEach((num) => {
+    }
+    for (let num of nums2) {
         if (uniqueCount.has(num) && uniqueCount.get(num) > 0) {
             result.push(num);
             uniqueCount.set(num, uniqueCount.get(num) - 1);
         }
-    });
+    }
     return result;
 };
 
@@ -38,7 +37,8 @@ const intersection2 = (nums1, nums2) => {
     nums2.sort((num1, num2) => { return num1 > num2 ? 1 : -1});
 
     let i = 0, j = 0;
-    while (i < nums1.length && j < nums2.length) {
+    let size1 = nums1.length, size2 = nums2.length;
+    while (i < size1 && j < size2) {
         if (nums1[i] === nums2[j]) {
             result.push(nums1[i]);
             i++;

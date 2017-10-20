@@ -1,7 +1,8 @@
 'use strict';
 
 const heapify1 = (nums) => {
-    for (let i = 1; i < nums.length; i++) {
+    let size = nums.length;
+    for (let i = 1; i < size; i++) {
         percolateUp(nums, i);
     }
 };
@@ -22,7 +23,8 @@ const parentIndex = (i) => {
 
 //
 const heapify2 = (nums) => {
- for (let i = Math.floor((nums.length - 1) / 2) ; i >= 0 ; i--){
+    let size = nums.length;
+ for (let i = Math.floor((size - 1) / 2) ; i >= 0 ; i--){
      percolateDown(nums, i);
  }
 }

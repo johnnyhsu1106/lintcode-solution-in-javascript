@@ -56,11 +56,11 @@ const mergeKLists_heap = (lists) => {
     let dummy = new ListNode(0);
     let tail = dummy;
 
-    lists.forEach((list) => {
+    for (let list of lists) {
         if (list !== null) {
             minHeap.push(list);
         }
-    });
+    }
 
     while (minHeap.length !== 0) {
         let node = minHeap.pop();

@@ -19,12 +19,12 @@ const sixDegrees = (graph, source, target) => {
             if (node === target) {
                 return degree;
             }
-            node.neighbors.forEach((neighbor) => {
+            for (let neighbor of node.neighbors) {
                 if (! visited.has(neighbor)) {
                     queue.push(neighbor);
                     visited.add(neighbor);
                 }
-            });
+            }
         }
         degree++;
     }
@@ -32,7 +32,7 @@ const sixDegrees = (graph, source, target) => {
 };
 
 
-
+//
 // const main = () => {
 //     let graph, node1, node2, node3, node4, source, target;
 //     node1 = new UndirectedGraphNode(1);

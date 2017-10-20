@@ -17,13 +17,14 @@ const nthUglyNumber = (n) => {
         if (count === n) {
             return uglyNum;
         }
-        primes.forEach((prime) => {
+
+        for (let prime of primes) {
             let newUglyNum = prime * uglyNum;
             if (! uglyNums.has(newUglyNum)) {
                 minHeap.push(newUglyNum);
                 uglyNums.add(newUglyNum);
             }
-        });
+        }
     }
 };
 

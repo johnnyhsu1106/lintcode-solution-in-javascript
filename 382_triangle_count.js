@@ -4,8 +4,8 @@ const triangleCount = (nums) => {
 
     nums.sort((num1, num2) => {return num1 > num2 ? 1 : -1});
     let count = 0;
-
-    for (let i = 2; i < nums.length; i ++) {
+    let size = nums.length;
+    for (let i = 2; i < size; i ++) {
         let start = 0, end = i - 1;
         while (start < end) {
             if (nums[start] + nums[end] > nums[i]) {

@@ -4,18 +4,20 @@ const recoverRotatedSortedArray = (nums) => {
     if (nums === null || nums.length === 0) {
         return;
     }
-    let sep = nums.length - 1;
-    for (let i = 0; i < nums.length - 1; i++) {
+
+    let size = nums.length;
+    let sep = size - 1;
+    for (let i = 0; i < size - 1; i++) {
         if (nums[i] > nums[i + 1]) {
             sep = i;
         }
     }
-    if (sep === nums.length - 1) {
+    if (sep === size - 1) {
         return;
     }
     swap(nums, 0, sep);
-    swap(nums, sep + 1, nums.length - 1);
-    swap(nums, 0, nums.length - 1);
+    swap(nums, sep + 1, size - 1);
+    swap(nums, 0, size - 1);
 };
 
 const swap = (nums, i, j) => {

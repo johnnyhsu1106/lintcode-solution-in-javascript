@@ -7,13 +7,14 @@ const fourSum = (nums, target) =>  {
     nums.sort((num1, num2) => { return num1 > num2 ? 1 : -1} );
 
     let results = [];
-    for (let i = 0; i < nums.length - 3; i++) {
+    let size = nums.length;
+    for (let i = 0; i < size - 3; i++) {
         if (i === 0 || nums[i] != nums [i - 1] ) {
 
-            for (let j = i + 1; j < nums.length - 2; j++) {
+            for (let j = i + 1; j < size - 2; j++) {
                 if (j === i + 1 || nums[j] != nums[j - 1]) {
 
-                    let start = j + 1, end = nums.length - 1;
+                    let start = j + 1, end = size - 1;
 
                     while (start < end) {
                         let sum = nums[i] + nums[j] + nums[start] + nums[end];

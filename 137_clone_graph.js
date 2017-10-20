@@ -29,31 +29,29 @@ const getNodes = (graph) => {
 
     while (queue.length !== 0) {
         let node = queue.shift();
-        node.neighbors.forEach((neighbor) => {
+        for (let neighbor of node.neighbors) {
             if (! visited.has(neighbor)) {
                 visited.add(neighbor);
                 queue.push(neighbor);
             }
-        });
+        }
     }
     return visited;
 };
 
 
 const cloneNodes = (nodes, nodesMap) => {
-
-    nodes.forEach((node) => {
+    for (let node of nodes) {
         nodesMap.set(node, new UndirectedGraphNode(node.label));
-    });
+    }
 };
 
 const cloneNeighbors = (nodes, nodesMap) => {
-    nodes.forEach((node) =>{
-        node.neighbors.forEach((neighbor) => {
+    for (let node of nodes) {
+        for (let neighbor of node.neighbors) {
             nodesMap.get(node).neighbors.push(nodesMap.get(neighbor));
-        });
-    });
-
+        }
+    }
 };
 
 

@@ -7,15 +7,14 @@ const topk = (nums, k) =>  {
         return [];
     }
     let minHeap = new Heap([], null, (a, b) => {return b - a});
-    nums.forEach((num) => {
+    
+    for (let num of nums) {
         minHeap.push(num);
         if (minHeap.length > k) {
             minHeap.pop();
         }
-    });
-
+    }
     return minHeap.sorted((num1, num2) => {return num2 - num1});
-
 };
 
 // const main = () => {

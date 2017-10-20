@@ -12,12 +12,12 @@ const partition = (s) => {
 };
 
 const dfs = (s, partitions, startIdx, results) => {
+    let size = s.length;
 
-    if (startIdx === s.length) {
+    if (startIdx === size) {
         results.push(partitions.concat([]));
     }
-
-    for (let i = startIdx; i < s.length; i++) {
+    for (let i = startIdx; i < size; i++) {
 
         let sub = s.substring(startIdx, i + 1);
 

@@ -1,4 +1,5 @@
 'use strict';
+
 const combinationSum = (candicates, target) => {
     if (candicates === null || candicates.length === 0) {
         return [];
@@ -10,7 +11,6 @@ const combinationSum = (candicates, target) => {
     dfs(candicates, target, combination, 0,  result);
 
     return result;
-
 };
 
 const dfs = (candicates, remain, combination, startIdx, result) => {
@@ -19,19 +19,18 @@ const dfs = (candicates, remain, combination, startIdx, result) => {
         result.push(combination.concat([]));
         return ;
     }
-
-    for (let i = startIdx; i < candicates.length; i++) {
+    let size = candicates.length;
+    for (let i = startIdx; i < size; i++) {
         if (candicates[i] > remain) {
             break;
         }
         if (i === 0 || candicates[i] !== candicates [i - 1]) {
             combination.push(candicates[i]);
             dfs(candicates, remain - candicates[i], combination, i, result);
-            combination.pop();    
+            combination.pop();
         }
-
     }
-}
+};
 
 
 

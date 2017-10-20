@@ -15,18 +15,17 @@ const highFive1 = (records) => {
 
     let scoreMap = new Map();
     let scoreAvg = new Map();
-
-    records.forEach((record) => {
+    for (let record of records) {
         if (! scoreMap.has(record.id)) {
             scoreMap.set(record.id, []);
         }
         scoreMap.get(record.id).push(record.score);
-    });
-    scoreMap.forEach((scores, id) => {
+    }
+    for (let [id, scores] of scoreMap) {
         scores.sort((num1, num2) => {return num1 > num2 ? 1 : -1});
         let sum = scores.slice(scores.length - 5, scores.length ).reduce((a, b) => {return a + b});
         scoreAvg.set(id, sum / 5.0);
-    });
+    }
     return scoreAvg;
 };
 
@@ -41,8 +40,7 @@ const highFive2 = (records) => {
     }
     let scoreMap = new Map();
     let scoreAvg = new Map();
-
-    records.forEach((record) => {
+    for (let record of records) {
         if (! scoreMap.has(record.id)) {
             scoreMap.set(record.id, new Heap([], null, (a, b) => {return b - a})); // min heap
         }
@@ -50,16 +48,15 @@ const highFive2 = (records) => {
         if (scoreMap.get(record.id).length > 5) {
             scoreMap.get(record.id).pop();
         }
-    });
-    scoreMap.forEach((scores, id) => {
+    }
+    for (let [id, scores] of scoreMap) {
         let sum = 0;
-        scores.forEach((score) => {
-            sum += score;
-        });
+        while (scores.length !== 0) {
+            sum += scores.pop();
+        }
         scoreAvg.set(id, sum / 5.0);
-    });
+    }
     return scoreAvg;
-
 }
 
 // const main = () => {

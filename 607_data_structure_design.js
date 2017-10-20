@@ -14,12 +14,12 @@ class TwoSum {
     }
     find(value) {
 
-        for (let num of this.nums.keys()) {
+        for (let [num, count] of this.nums) {
             let found;
             let remain = value - num;
             if (this.nums.has(remain)) {
                 if (remain === num) {
-                    found = this.nums.get(num) >= 2;
+                    found = count >= 2;
                 } else {
                     found = true;
                 }

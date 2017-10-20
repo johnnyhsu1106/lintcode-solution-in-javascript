@@ -19,8 +19,8 @@ const dfs = (nums, permutation, set, result) => {
     if (permutation.length === nums.length) {
         result.push(permutation.concat([]));
     }
-
-    for (let i = 0; i < nums.length; i++) {
+    let size = nums.length
+    for (let i = 0; i < size; i++) {
         if (! set.has(nums[i])) {
             set.add(nums[i]);
             permutation.push(nums[i]);

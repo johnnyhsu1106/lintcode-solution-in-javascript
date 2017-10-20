@@ -18,9 +18,7 @@ const rehashing = (hashTable) => {
     for (let i = 0; i < newCapacity; i++) {
         newHashTable.push(null);
     }
-
-    hashTable.forEach((node) => {
-
+    for (let node of hashTable) {
         while (node !== null) {
             let code = hashcode(node.val, newCapacity);
 
@@ -37,7 +35,7 @@ const rehashing = (hashTable) => {
             node.next = null;
             node = next;
         }
-    });
+    }
     return newHashTable;
 
 };

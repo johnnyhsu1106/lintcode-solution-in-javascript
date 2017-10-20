@@ -22,8 +22,8 @@ const dfs = (nums, permutation, visited, result) =>  {
     if (permutation.length === nums.length) {
         result.push(permutation.concat([]))
     }
-
-    for (let i = 0; i < nums.length; i++) {
+    let size = nums.length;
+    for (let i = 0; i < size; i++) {
         if (! visited[i]) {
             if (i === 0 || nums[i] !== nums[i - 1] || visited[i - 1]) {
                 permutation.push(nums[i]);

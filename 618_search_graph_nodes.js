@@ -1,4 +1,5 @@
 'use strict';
+
 class UndirectedGraphNode {
     constructor(x) {
         this.label = x;
@@ -14,14 +15,16 @@ const searchNode = (graph, values, node, target) => {
         if (values.get(node) === target) {
             return node;
         }
-        node.neighbors.forEach((neighbor) =>{
+        for (let neighbor of node.neighbors) {
             if (! visited.has(neighbor)) {
                 visited.add(neighbor);
                 queue.push(neighbor);
             }
-        });
+        }
     }
 };
+
+
 
 // const main = () =>{
 //     let node1 = new UndirectedGraphNode(1);
@@ -34,7 +37,7 @@ const searchNode = (graph, values, node, target) => {
 //     node3.neighbors = [node2, node1];
 //     node4.neighbors = [node1, node5];
 //     node5.neighbors = [node4];
-//     values = new Map();
+//     let values = new Map();
 //     values.set(node1, 3);
 //     values.set(node2, 4);
 //     values.set(node3, 10);

@@ -6,7 +6,7 @@ const longestConsecutive = (nums) => {
     }
     let set = new Set(nums);
     let longest = 0;
-    nums.forEach((num) => {
+    for (let num of nums) {
         let down = num - 1;
         while (set.has(down)) {
             set.delete(down);
@@ -18,9 +18,12 @@ const longestConsecutive = (nums) => {
             up++;
         }
         longest = Math.max(longest, up - down - 1);
-    });
+
+    }
     return longest;
 };
+
+
 
 // const main = () => {
 //     let nums;

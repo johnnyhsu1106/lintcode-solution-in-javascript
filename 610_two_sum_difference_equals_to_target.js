@@ -5,7 +5,8 @@ const twoSum7 = (nums, target) => {
         return [];
     }
     let map = new Map();
-    for (let i = 0; i < nums.length; i++) {
+    let size = nums.length;
+    for (let i = 0; i < size; i++) {
         let num = nums[i];
         if (map.has(num)) {
             return [map.get(num) + 1, i + 1];

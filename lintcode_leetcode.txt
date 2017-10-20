@@ -149,7 +149,6 @@ lintcode \ leetcode
     143. Sort Colors II
         57. 3Sum / 15. 3Sum
         31. Partition Array
-
         604. Window Sum
         539. Move Zeroes / 283. Move Zeroes
         415. Valid Palindrome / 125. Valid Palindrome
@@ -179,7 +178,6 @@ lintcode \ leetcode
         4. Ugly Number II / 264. Ugly Number II
     594. strStr II
         134. LRU Cache / 146. LRU Cache
-
         601. Flatten 2D Vector / 251. Flatten 2D Vector
         545. Top k Largest Numbers II
         486. Merge k Sorted Arrays
@@ -189,11 +187,11 @@ lintcode \ leetcode
 
 
 9 - Dynamic Programming
-    115. Unique Paths II
-    114. Unique Paths
+        115. Unique Paths II / 63. Unique Paths II
+        114. Unique Paths / 62. Unique Paths
     111. Climbing Stairs
-    110. Minimum Path Sum
-    109. Triangle
+        110. Minimum Path Sum / 64. Minimum Path Sum
+        109. Triangle / 120. Triangle
     603. Largest Divisible Subset
     611. Knight Shortest Path
     513. Perfect Squares

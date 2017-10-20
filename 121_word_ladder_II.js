@@ -22,10 +22,11 @@ const findLadders = (start, end, dict) => {
     dict.add(end);
     // iniialize the distanceMap, nextWordMap
     let distanceMap = new Map();
-    dict.forEach((word) => { distanceMap.set(word, 0) });
     let nextWordsMap = new Map();
-    dict.forEach((word) => {nextWordsMap.set(word, [])} );
-
+    for (let word of dict) {
+        distanceMap.set(word, 0);
+        nextWordsMap.set(word, []);
+    }
 
     bfs(start, end, dict, distanceMap, nextWordsMap);
     dfs(start, end, dict, distanceMap, nextWordsMap, path, result);
@@ -42,14 +43,13 @@ const dfs = (word, end, dict, distanceMap, nextWordsMap, path, result) => {
         return;
     }
     let nextWords = nextWordsMap.get(word);
-    nextWords.forEach((nextWord) => {
+    for (let nextWord of nextWords) {
         if (distanceMap.get(word) === distanceMap.get(nextWord) + 1) {
             path.push(nextWord);
             dfs(nextWord, end, dict, distanceMap, nextWordsMap, path, result);
             path.pop();
         }
-    });
-
+    }
 };
 
 const bfs = (start, end, dict, distanceMap, nextWordsMap) => {
@@ -79,7 +79,8 @@ const bfs = (start, end, dict, distanceMap, nextWordsMap) => {
 
 const getNextWords = (word, dict) => {
     let nextWords = [];
-    for (let i = 0; i < word.length; i++) {
+    let size = word.length;
+    for (let i = 0; i < size; i++) {
         for (let j = 0; j < 26; j++) {
             let char = word.charAt(i);
             let newChar = String.fromCharCode('a'.charCodeAt(0) + j);
@@ -107,8 +108,6 @@ const replaceChar = (index, newChar, word) => {
 //     start = 'hit';
 //     end = 'cog';
 //     dict = new Set(["hot","dot","dog","lot","log"]);
-//     console.log(findLadders(start, end, dict));
-//
-//
+//     console.log(findLadders(start, end, dict)); 
 // };
 // main();

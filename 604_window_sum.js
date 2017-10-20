@@ -9,8 +9,9 @@
          sum += nums[i];
      }
      result.push(sum);
-
-     for (let i = k; i < nums.length; i++) {
+     
+     let size = nums.length;
+     for (let i = k; i < size; i++) {
          sum = sum + nums[i] - nums[i - k];
          result.push(sum);
      }

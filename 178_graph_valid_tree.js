@@ -9,12 +9,12 @@ const validTree_1 = (n, edges) => {
 
     while (queue.length !== 0) {
         let node = queue.shift();
-        nodes.get(node).forEach((neighbor) =>{
+        for (let neighbor of nodes.get(node)) {
             if (! visited.has(neighbor)) {
                 visited.add(neighbor);
                 queue.push(neighbor);
             }
-        });
+        }
     }
     return visited.size == n;
 };
@@ -25,12 +25,12 @@ const edgesToNodes = (n, edges) => {
     for (let i = 0; i < n; i++) {
         nodes.set(i, []);
     }
-    edges.forEach((edge) => {
+    for (let edge of edges) {
         let node1 = edge[0];
         let node2 = edge[1];
         nodes.get(node1).push(node2);
         nodes.get(node2).push(node1);
-    });
+    }
     return nodes;
 };
 
@@ -41,10 +41,10 @@ const validTree_2 = (n, edges) => {
         return false;
     }
     let unionFind = new UnionFind(n);
-    edges.forEach((edge) => {
+    for (let edge of edges) {
         let node1 = edge[0], node2 = edge[1];
         unionFind.connect(node1, node2);
-    });
+    }
     return unionFind.query() === 1;
 };
 
@@ -78,15 +78,16 @@ class UnionFind {
 
 
 
-// //////////////////////////////////////////////////////////////////////////
 // const main = () => {
 //     let n, edges;
 //     edges = [[0, 1], [0, 2], [0, 3], [1, 4]];
 //     n = 5;
+//     console.log(validTree_1(n, edges));
 //     console.log(validTree_2(n, edges));
 //
 //     edges = [[0, 1], [0, 2], [2, 3], [1, 3]];
 //     n = 5;
+//     console.log(validTree_1(n, edges));
 //     console.log(validTree_2(n, edges));
 // };
 // main();

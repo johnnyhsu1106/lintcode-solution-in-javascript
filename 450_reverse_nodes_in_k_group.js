@@ -24,7 +24,6 @@ const reverseKGroup = (head, k) => {
 const reverseNextKNodes = (head, k) => {
     // head -> n1 -> n2 ->... -> nk -> nk+1
     // head -> nk -> nk-1_...-> n1 -> nk+1
-
     let n1 = head.next;
     let nk = findKthNode(head, k);
 

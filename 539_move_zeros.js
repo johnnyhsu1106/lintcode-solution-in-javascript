@@ -6,17 +6,18 @@ const moveZeroes = (nums) => {
     }
     let i = 0;
     let nonZeroIndex = 0;
-    while (nonZeroIndex < nums.length) {
+    let size = nums.length;
+    while (nonZeroIndex < size) {
         while (nonZeroIndex < nums.length && nums[nonZeroIndex] === 0) {
             nonZeroIndex++;
         }
-        if (nonZeroIndex < nums.length) {
+        if (nonZeroIndex < size) {
             nums[i] = nums[nonZeroIndex];
             i++;
             nonZeroIndex++;
         }
     }
-    while (i < nums.length) {
+    while (i < size) {
         nums[i] = 0;
         i++;
     }

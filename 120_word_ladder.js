@@ -27,12 +27,12 @@ const ladderLength = (beginWord, endWord, wordSet) => {
                 return minLength;
             }
             let nextWords = getNextWords(word, wordSet);
-            nextWords.forEach((nextWord) => {
-                if (! visited.has(nextWord)) {
+            for (let nextWord of nextWords) {
+                if (!visited.has(nextWord)) {
                     visited.add(nextWord);
                     queue.push(nextWord);
                 }
-            });
+            }
         }
     }
     return 0;
@@ -40,7 +40,8 @@ const ladderLength = (beginWord, endWord, wordSet) => {
 
 const getNextWords = (word, wordSet) => {
     let nextWords = [];
-    for (let i = 0; i < word.length; i++) {
+    let size = word.length
+    for (let i = 0; i < size; i++) {
         for (let j = 0; j < 26; j++) {
 
             let index = 'a'.charCodeAt(0) + j;

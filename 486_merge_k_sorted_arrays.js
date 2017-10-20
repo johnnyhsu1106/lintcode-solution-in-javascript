@@ -9,12 +9,14 @@ const mergeSortedArrays_heap = (arrays) => {
     let minHeap = Heap([], null, ([val1, x1, y1], [val2, x2, y2]) => {return val2 - val1});
     let result =[];
     // inintial the k numbers in minHeap
-    arrays.forEach((array, x) => {
+    let size = arrays.length;
+    for (let x = 0; x < size; x++) {
+        let array = arrays[x];
         if (array.length !== 0) {
             minHeap.push([array[0], x, 0 ]);
         }
+    }
 
-    });
     while (minHeap.length !== 0) {
         let [val, x, y] = minHeap.pop();
         result.push(val);
@@ -53,17 +55,18 @@ const mergeTwoArrays = (arr1, arr2) => {
 
     let result = [];
     let i = 0, j = 0;
-    while (i < arr1.length && j < arr2.length) {
+    let size1 = arr1.length, size2 = arr2.length;
+    while (i < size1 && j < size2) {
         if (arr1[i] < arr2[j]) {
             result.push(arr1[i++]);
         } else {
             result.push(arr2[j++]);
         }
     }
-    while (i < arr1.length) {
+    while (i < size1) {
         result.push(arr1[i++]);
     }
-    while (j < arr2.length) {
+    while (j < size2) {
         result.push(arr2[j++]);
     }
 

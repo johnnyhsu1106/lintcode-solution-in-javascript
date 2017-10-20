@@ -6,6 +6,7 @@ const twoSum6 = (nums, target) => {
     nums.sort((num1, num2) => {return num1 > num2 ? 1 : -1});
     let start = 0, end = nums.length - 1;
     let count = 0;
+    
     while (start < end){
         if (nums[start] + nums[end] === target) {
             count++;
@@ -28,7 +29,7 @@ const twoSum6 = (nums, target) => {
 };
 
 
-// 
+//
 // const main = () => {
 //     let nums, target;
 //

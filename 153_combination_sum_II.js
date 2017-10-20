@@ -1,4 +1,5 @@
 'use strict';
+
 const combinationSum2 = (candicates, target) => {
     if (candicates === null || candicates.length === 0) {
         return [];
@@ -15,9 +16,9 @@ const dfs = (candicates, startIdx, remain, combination, results) => {
     if (remain === 0) {
         results.push(combination.concat([]));
     }
+    let size = candicates.length;
 
-
-    for (let i = startIdx; i < candicates.length; i ++) {
+    for (let i = startIdx; i < size; i ++) {
         if (candicates[i] > remain) {
             break;
         }

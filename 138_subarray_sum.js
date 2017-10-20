@@ -5,7 +5,8 @@ const subarraySum = (nums) => {
     let preSumTable = new Map();
     preSumTable.set(0, -1);
     let sum = 0;
-    for (let i = 0; i < nums.length; i++) {
+    let size = nums.length;
+    for (let i = 0; i < size; i++) {
         sum += nums[i];
         if (preSumTable.has(nums[i])) {
             return [preSumTable.get(sum) + 1, i];

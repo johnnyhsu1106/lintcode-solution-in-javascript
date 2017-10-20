@@ -12,8 +12,7 @@ const minLength = (str, dict) => {
     while (queue.length !== 0) {
         let str = queue.shift();
         min = Math.min(min, str.length);
-
-        dict.forEach((sub) => {
+        for (let sub of dict) {
             let found = str.indexOf(sub);
 
             while (found !== -1) {
@@ -24,10 +23,11 @@ const minLength = (str, dict) => {
                 }
                 found = str.indexOf(sub, found + 1)
             }
-        });
+        }
     }
     return min;
 };
+
 
 // const main = () => {
 //     let str = 'ccdaabcdbb';

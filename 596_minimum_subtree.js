@@ -8,7 +8,6 @@ class TreeNode {
     }
 }
 
-
 let subtree;
 let subtreeSum = Infinity;
 

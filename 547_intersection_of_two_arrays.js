@@ -6,14 +6,14 @@ const intersection1 = (nums1, nums2) => {
     // Time: O(n)
     let result = [];
     let unique = new Set(nums1);
-
-    nums2.forEach((num) => {
+    
+    for (let num of nums2) {
         if (unique.has(num)) {
             result.push(num);
             // avoid the duplicate num
             unique.delete(num);
         }
-    });
+    }
     return result;
 };
 

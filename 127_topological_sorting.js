@@ -11,37 +11,37 @@ const topSort = (graph) => {
         return [];
     }
     let result = [];
-    let indegree = new Map();
+    let indegrees = new Map();
 
     //  initial all nodes' indegree is 0
-    graph.forEach((node) => {
-        indegree.set(node, 0);
-    });
+    for (let node of graph) {
+        indegrees.set(node, 0);
+    }
     // set up all nodes' indegree
-    graph.forEach((node) => {
-        node.neighbors.forEach((neighbor) =>{
-            indegree.set(neighbor, indegree.get(neighbor) + 1);
-        });
-    });
+    for (let node of graph) {
+        for (let neighbor of node.neighbors) {
+            indegrees.set(neighbor, indegrees.get(neighbor) + 1);
+        }
+    }
+
     // get the begin nodes
     let beginNodes = [];
-    indegree.forEach((indegree, node) => {
+    for (let [node, indegree] of indegrees) {
         if (indegree === 0) {
             beginNodes.push(node);
         }
-    });
+    }
     //  BFS
     let queue = beginNodes;
     while (queue.length !== 0) {
         let node = queue.shift();
         result.push(node);
-        node.neighbors.forEach((neighbor) => {
-            indegree.set(neighbor, indegree.get(neighbor) - 1);
-            if (indegree.get(neighbor) === 0) {
+        for (let neighbor of node.neighbors) {
+            indegrees.set(neighbor, indegrees.get(neighbor) - 1);
+            if (indegrees.get(neighbor) === 0) {
                 queue.push(neighbor);
             }
-        });
-
+        }
     }
     return result;
 };

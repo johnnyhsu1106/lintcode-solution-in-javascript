@@ -10,19 +10,17 @@ const findOrder = (numCourses, prerequisites) => {
         courseMap.set(i, []);
     }
     //  set up indegrees and courseMap based on prerequisites
-    prerequisites.forEach((coursePair) => {
-        let course = coursePair[0];
-        let preCourse = coursePair[1];
+    for (let [course, pre] of prerequisites) {
         indegrees.set(course, indegrees.get(course) + 1);
-        courseMap.get(preCourse).push(course);
-    });
+        courseMap.get(pre).push(course);
+    }
     // get all precourses,whose indegrees = 0
     let preCourses = [];
-    indegrees.forEach((indegree, course) => {
+    for (let [course, indegree] of indegrees) {
         if (indegree === 0) {
             preCourses.push(course);
         }
-    })
+    }
     // BFS
     let courseOrder = [];
     let queue = preCourses;
@@ -32,12 +30,12 @@ const findOrder = (numCourses, prerequisites) => {
         courseOrder.push(course);
 
         let nextCourses = courseMap.get(course);
-        nextCourses.forEach((nextCourse) => {
+        for (let nextCourse of nextCourses) {
             indegrees.set(nextCourse, indegrees.get(nextCourse) - 1);
             if (indegrees.get(nextCourse) === 0) {
                 queue.push(nextCourse);
             }
-        });
+        }
     }
 
     if (numCourses !== courseOrder.length) {

@@ -13,14 +13,13 @@ const kClosest = (points, origin, k) => {
     }
     let result = [];
     let maxHeap = new Heap();
-
-    points.forEach((point) => {
+    for (let point of points) {
         let distance = getDistance(point, origin);
         maxHeap.push([distance, point.x, point.y]);
         if (maxHeap.length > k) {
             maxHeap.pop();
         }
-    });
+    }
 
     let sortedMaxHeap = maxHeap.sorted(([distance1, x1, y1], [distance2, x2, y2]) => {
         let diff = distance1 - distance2;
@@ -32,9 +31,9 @@ const kClosest = (points, origin, k) => {
         }
         return diff;
     });
-    sortedMaxHeap.forEach((point) => {
+    for (let point of sortedMaxHeap) {
         result.push(new Point(point[1], point[2]));
-    });
+    }
     return result;
 };
 
