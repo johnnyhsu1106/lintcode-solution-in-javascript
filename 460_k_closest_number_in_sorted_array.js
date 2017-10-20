@@ -1,4 +1,7 @@
 'use strict';
+// the only different between LintCode and LeetCode
+// the result is sorted in LeetCode so sort it before return result
+// result.sort((num1, num2) => {return num1 > num2 ? 1 : -1})
 
 const findClosestElements = (nums, target, k) => {
     let result = [];
@@ -11,14 +14,18 @@ const findClosestElements = (nums, target, k) => {
 
     for (let i = 0; i < k; i++) {
         if (left < 0) {
-            result.push(nums[right++]);
+            result.push(nums[right]);
+            right++;
         } else if (right >= nums.length) {
-            result.push(nums[left--]);
+            result.push(nums[left]);
+            left--;
         } else {
             if (target - nums[left] <= nums[right] - target) {
-                result.push(nums[left--]);
+                result.push(nums[left]);
+                left--;
             } else {
-                result.push(nums[right++]);
+                result.push(nums[right]);
+                right++;
             }
         }
     }
