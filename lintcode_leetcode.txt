@@ -189,19 +189,20 @@ lintcode \ leetcode
 9 - Dynamic Programming
         115. Unique Paths II / 63. Unique Paths II
         114. Unique Paths / 62. Unique Paths
-    111. Climbing Stairs
+        111. Climbing Stairs / 70 Climbing Stairs
         110. Minimum Path Sum / 64. Minimum Path Sum
         109. Triangle / 120. Triangle
-    603. Largest Divisible Subset
+        603. Largest Divisible Subset / 368. Largest Divisible Subset
     611. Knight Shortest Path
     513. Perfect Squares
-    116. Jump Game
-    76. Longest Increasing Subsequence
+        116. Jump Game / 55. Jump Game
+        76. Longest Increasing Subsequence / 300. Longest Increasing Subsequence
+        397. Longest Increasing Continuous Subsequence / 674. Longest Continuous Increasing Subsequence
 
-    272. Climbing Stairs II
+        272. Climbing Stairs II
     630. Knight Shortest Path II
-    117. Jump Game II
-    602. Russian Doll Envelopes
+        117. Jump Game II / 45. Jump Game II
+        602. Russian Doll Envelopes / 354. Russian Doll Envelopes
     622. Frog Jump
 
 

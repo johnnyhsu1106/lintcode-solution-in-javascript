@@ -13,11 +13,12 @@ const uniquePaths = (m, n) => {
         }
     }
     // initialze the pathSums
-    for (let x = 0; x < m; x++) {
-        pathSums[x][0] = 1;
+    pathSums[0][0] = 1
+    for (let x = 1; x < m; x++) {
+        pathSums[x][0] = pathSums[x - 1][0];
     }
-    for (let y = 0; y < n; y++) {
-        pathSums[0][y] = 1;
+    for (let y = 1; y < n; y++) {
+        pathSums[0][y] = pathSums[0][y - 1];
     }
     // dp
     for (let x = 1; x < m; x++) {
