@@ -208,13 +208,20 @@ lintcode \ leetcode
 
 1 - Follow up in Code Interview
     401. Kth Smallest Number in Sorted Matrix
-    406. Minimum Size Subarray Sum
-    384. Longest Substring Without Repeating Characters
+        406. Minimum Size Subarray Sum
+    384. Longest Substring Without Repaeating Characters
     386. Longest Substring with At Most K Distinct Characters
     465. Kth Smallest Sum In Two Sorted Arrays
 
+    543. Kth Largest in N Arrays Easy
+609. Two Sum - Less than or equal to target Medium
+461. Kth Smallest Numbers in Unsorted Array Medium
+382. Triangle Count Medium
+        32. Minimum Window Substring Medium / 76. Minimum Window Substring
+5. Kth Largest Element
+
 2 - Data Structure I
-    433. Number of Islands Easy
+    433. Number of Islands
     591. Connecting Graph III
     590. Connecting Graph II
     589. Connecting Graph
@@ -229,7 +236,7 @@ lintcode \ leetcode
 
 3 - Data Structure II
     575. Expression Expand
-    363. Trapping Rain Water
+        363. Trapping Rain Water / 42. Trapping Rain Water a
     40. Implement Queue by Two Stacks
     12. Min Stack
     360. Sliding Window Median

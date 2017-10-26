@@ -11,23 +11,22 @@ const longestConsecutive = (nums) => {
         while (set.has(down)) {
             set.delete(down);
             down--;
+
         }
+
         let up = num + 1;
         while (set.has(up)) {
             set.delete(up);
             up++;
         }
-        longest = Math.max(longest, up - down - 1);
-
+        longest = Math.max(longest, up -  down - 1)
     }
     return longest;
 };
 
-
-
 // const main = () => {
 //     let nums;
-//     nums = [100, 4, 200, 1, 3, 2];
+//     nums =  [100, 4, 200, 1, 3, 2];
 //     console.log(longestConsecutive(nums));
 // };
 // main();

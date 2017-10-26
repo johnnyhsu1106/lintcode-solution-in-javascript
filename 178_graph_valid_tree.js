@@ -1,93 +1,91 @@
 'use strict';
-const validTree_1 = (n, edges) => {
+
+const validTree_BFS = (n, edges) =>  {
+    if (n === 0) {
+        return false;
+    }
     if (n !== edges.length + 1) {
         return false;
     }
-    let nodes = edgesToNodes(n, edges);
-    let queue = [0];
-    let visited = new Set([0]);
+    let nodeMap = new Map();
+    for (let node = 0; node < n; node   ++) {
+        nodeMap.set(node, []);
+    }
+    for (let [node1, node2] of edges) {
+        nodeMap.get(node1).push(node2);
+        nodeMap.get(node2).push(node1);
+    }
 
+    // BFS visited all nodes
+    let queue = [0];
+    let visited = new Set();
+    visited.add(0);
     while (queue.length !== 0) {
         let node = queue.shift();
-        for (let neighbor of nodes.get(node)) {
+        let neighbors = nodeMap.get(node);
+        for (let neighbor of neighbors) {
             if (! visited.has(neighbor)) {
-                visited.add(neighbor);
                 queue.push(neighbor);
+                visited.add(neighbor);
             }
         }
     }
-    return visited.size == n;
+    return visited.size === n;
 };
-
-const edgesToNodes = (n, edges) => {
-
-    let nodes = new Map();
-    for (let i = 0; i < n; i++) {
-        nodes.set(i, []);
-    }
-    for (let edge of edges) {
-        let node1 = edge[0];
-        let node2 = edge[1];
-        nodes.get(node1).push(node2);
-        nodes.get(node2).push(node1);
-    }
-    return nodes;
-};
-
-// ///////////////////////////////////////////////////////////////////////////
-const validTree_2 = (n, edges) => {
-    // use union find data structure
-    if (n !== edges.length + 1) {
-        return false;
-    }
-    let unionFind = new UnionFind(n);
-    for (let edge of edges) {
-        let node1 = edge[0], node2 = edge[1];
-        unionFind.connect(node1, node2);
-    }
-    return unionFind.query() === 1;
-};
-
 class UnionFind {
     constructor(n) {
-        this.count = n
-        this.father = []
+        this.count = n;
+        this.father = [];
         for (let i = 0; i < n; i++) {
             this.father.push(i);
         }
     }
     find(x) {
         if (this.father[x] === x) {
-            return x;
+            return this.father[x];
         }
-        this.father[x] = this.find(this.father[x])
+        this.father[x] = this.find(this.father[x]);
         return this.father[x];
     }
     connect(a, b) {
-        let root_a = this.find(a);
-        let root_b = this.find(b);
-        if (root_a !== root_b) {
-            this.father[root_a] = root_b;
-            this.count--
+        let rootA = this.find(a);
+        let rootB = this.find(b);
+        if (rootA !== rootB) {
+            this.father[rootA] = rootB;
+            this.count--;
         }
     }
     query() {
         return this.count;
     }
 }
+const validTree_UF = (n, edges) =>  {
+    // UnionFind
+    if (n === 0) {
+        return false;
+    }
+    if (n !== edges.length + 1) {
+        return false;
+    }
+    let unionFind = new UnionFind(n);
+    for (let [node1, node2] of edges) {
+        unionFind.connect(node1, node2);
+    }
+    return unionFind.query() === 1;
 
+};
 
-
-// const main = () => {
+// const main = () =>  {
 //     let n, edges;
+//     n = 5;
 //     edges = [[0, 1], [0, 2], [0, 3], [1, 4]];
-//     n = 5;
-//     console.log(validTree_1(n, edges));
-//     console.log(validTree_2(n, edges));
+//     console.log(validTree_BFS(n, edges));
+//     console.log(validTree_UF(n, edges));
 //
-//     edges = [[0, 1], [0, 2], [2, 3], [1, 3]];
 //     n = 5;
-//     console.log(validTree_1(n, edges));
-//     console.log(validTree_2(n, edges));
+//     edges = [[0, 1], [1, 2], [0, 2], [3, 4]];
+//     console.log(validTree_BFS(n, edges));
+//     console.log(validTree_UF(n, edges));
+//
 // };
 // main();
