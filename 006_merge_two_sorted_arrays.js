@@ -25,7 +25,6 @@ const mergeSortedarray = (nums1, nums2) => {
             j++;
         }
     }
-
     while (i < size1) {
         result.push(nums1[i]);
         i++;

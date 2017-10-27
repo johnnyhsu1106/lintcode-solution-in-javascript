@@ -1,3 +1,5 @@
+'use strict';
+
 const binaryTreePathSum = (root, target) => {
     let result = [];
     let path = [];

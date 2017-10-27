@@ -9,7 +9,6 @@ const subsets = (nums) => {
     dfs(nums, 0, subset, results);
 
     return results;
-
 };
 
 const dfs = (nums, start, subset, results) => {

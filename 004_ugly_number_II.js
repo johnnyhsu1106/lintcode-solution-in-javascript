@@ -1,7 +1,6 @@
 'use strict';
-
-
 const Heap = require('collections/heap');
+
 const nthUglyNumber = (n) => {
     if (n === 1) {
         return 1;
@@ -9,7 +8,7 @@ const nthUglyNumber = (n) => {
     let count = 0;
     let primes = [2, 3, 5];
     let uglyNums = new Set();
-    let minHeap = new Heap([1], null, (a, b) =>{return b - a });
+    let minHeap = new Heap([1], null, (a, b) =>{ return b - a });
 
     while (minHeap.length !== 0) {
         let uglyNum = minHeap.pop();

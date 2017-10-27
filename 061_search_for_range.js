@@ -12,9 +12,8 @@ const searchRange = (nums, target) => {
         return [-1, -1];
     }
     return [first, last];
-
-
 };
+
 const findFirstTargetIndex = (nums, target) => {
     let start = 0,  end = nums.length - 1;
     while (start + 1 < end) {
@@ -32,7 +31,6 @@ const findFirstTargetIndex = (nums, target) => {
         return end;
     }
     return -1;
-
 };
 
 const findLastTargetIndex = (nums, target) => {
@@ -52,8 +50,6 @@ const findLastTargetIndex = (nums, target) => {
         return start;
     }
     return -1;
-
-
 };
 
 

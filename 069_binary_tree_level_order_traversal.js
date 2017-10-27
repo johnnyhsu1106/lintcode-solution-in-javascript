@@ -1,10 +1,10 @@
 'use strict';
+
 const levelOrder = (root) => {
     let result = [];
     if (root === null) {
         return result;
     }
-
     let queue = [root];
     while (queue.length !== 0) {
         let size = queue.length;

@@ -1,4 +1,5 @@
 'use strict';
+
 const findOrder = (numCourses, prerequisites) => {
     let courseMap = new Map();
     let indegrees = new Map();
@@ -37,12 +38,10 @@ const findOrder = (numCourses, prerequisites) => {
             }
         }
     }
-
     if (numCourses !== courseOrder.length) {
         return [];
     }
     return courseOrder;
-
 };
 
 

@@ -7,6 +7,7 @@ const searchMatrix = (matrix, target) => {
     let m = matrix.length, n = matrix[0].length;
     let x = m - 1, y = 0;
     let count = 0;
+    
     while (x >= 0 && y < n) {
         if (matrix[x][y] === target) {
             count++;
