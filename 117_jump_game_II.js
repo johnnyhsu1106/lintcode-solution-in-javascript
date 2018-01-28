@@ -5,11 +5,12 @@ const jump = (nums) => {
     if (nums === null || nums.length === 0) {
         return -1;
     }
-    let minJumps = [];
     let size = nums.length;
-    for (let i = 0; i < size; i++) {
-        minJumps.push(Infinity);
-    }
+    let minJumps = new Array(size).fill(Infinity);
+    // let minJumps = [];
+    // for (let i = 0; i < size; i++) {
+    //     minJumps.push(Infinity);
+    // }
     minJumps[0] = 0;
     for (let i = 1; i < size; i++) {
         for (let j = 0; j < i; j++) {

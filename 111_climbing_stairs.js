@@ -3,10 +3,11 @@ const climbStairs_1 = (n) => {
     if (n === 0 || n === 1) {
         return 1;
     }
-    let ways = [];
-    for (let i = 0; i <= n; i++) {
-        ways[i] = 0;
-    }
+    let ways = new Array(n + 1).fill(0);
+    // let ways = [];
+    // for (let i = 0; i <= n; i++) {
+    //     ways[i] = 0;
+    // }
     ways[0] = 1;
     ways[1] = 1;
     for (let i = 2; i <= n; i++) {

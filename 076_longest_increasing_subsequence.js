@@ -6,11 +6,12 @@ const longestIncreasingSubsequence = (nums) => {
         return 0;
     }
     // initailize the dp
-    let dp = [];
     let size = nums.length;
-    for (let i = 0; i < size; i++) {
-        dp.push(1);
-    }
+    let dp = new Array(size).fill(1);
+    // let dp = [];
+    // for (let i = 0; i < size; i++) {
+    //     dp.push(1);
+    // }
     // DP
     for (let i = 1; i < size; i++) {
         for (let j = 0; j < i; j++) {

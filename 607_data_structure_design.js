@@ -13,7 +13,6 @@ class TwoSum {
 
     }
     find(value) {
-
         for (let [num, count] of this.nums) {
             let found;
             let remain = value - num;
@@ -30,7 +29,6 @@ class TwoSum {
         }
         return false;
     }
-
 }
 
 // const main = () => {

@@ -4,8 +4,7 @@ const maxEnvelopes = (envelopes) => {
     if (envelopes === null || envelopes.length === 0 || envelopes[0].length === 0) {
         return 0;
     }
-    let dp = [];
-    let size = envelopes.length;
+
     //  sort the envelopes
     envelopes.sort(([w1, h1], [w2, h2]) => {
         let diff = w1 - w2;
@@ -15,9 +14,12 @@ const maxEnvelopes = (envelopes) => {
         return diff;
     });
     // initialize the dp
-    for (let i = 0; i < size; i++) {
-        dp.push(1);
-    }
+    let size = envelopes.length;
+    let dp = new Array(size).fill(1);
+    // let dp = [];
+    // for (let i = 0; i < size; i++) {
+    //     dp.push(1);
+    // }
     // DP
     for (let i = 1; i < size; i++) {
         for (let j = 0; j < i; j++) {

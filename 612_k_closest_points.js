@@ -1,11 +1,13 @@
 'use strict';
+
+const Heap = require('collections/heap');
+
 class Point {
     constructor(x = 0, y= 0) {
         this.x = x;
         this.y = y;
     }
 }
-const Heap = require('collections/heap');
 
 const kClosest = (points, origin, k) => {
     if (points.length === 0 || k === 0) {

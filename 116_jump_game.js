@@ -9,10 +9,11 @@ const canJump = (nums) => {
     }
     let size = nums.length;
     // initial dp
-    let can = [];
-    for (let i = 0; i < size; i++) {
-        can.push(false);
-    }
+    let can = new Array(size).fill(false);
+    // let can = [];
+    // for (let i = 0; i < size; i++) {
+    //     can.push(false);
+    // }
     can[0] = true;
 
     for (let i = 1; i < size; i++) {
